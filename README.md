@@ -1,3 +1,7 @@
+## Custom
+./build.sh --suite=jammy --flavor=server --rootfs-only --launchpad
+./build.sh --board=orangepi-5-plus --suite=jammy --flavor=server #--launchpad
+
 ## Overview
 
 [![Latest GitHub Release](https://img.shields.io/github/release/Joshua-Riek/ubuntu-rockchip.svg?label=Latest%20Release)](https://github.com/Joshua-Riek/ubuntu-rockchip/releases/latest)

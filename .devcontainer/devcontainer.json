@@ -1,0 +1,21 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "ubuntu-rockchip",
+    "build": {
+        // Path is relative to the devcontainer.json file.
+        "dockerfile": "Dockerfile"
+    },
+
+    "runArgs": [
+        // This will allow you to use a ptrace-based debugger like C++, Go, and Rust.
+        "--cap-add=SYS_PTRACE",
+        "--security-opt",
+        "seccomp=unconfined",
+        "--privileged",
+        // Use the same network as the host
+        "--net=host",
+        // permit loop mount
+        "-v", "/dev:/dev",
+    ],
+}
